@@ -1,6 +1,11 @@
 
+## personal update
 
+2020-05, downloaded video format modified from flv to mp4.
+
+---
 # BiliBiliDownloader
+
 
 BiliBili 多 UP 主，批量视频下载。不支持登录（想下的没办法再说 [doge]）。
 
