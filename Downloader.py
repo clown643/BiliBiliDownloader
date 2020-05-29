@@ -24,11 +24,12 @@ class Downloader():
             if self.newUrl is None:
                 raise Exception("CheckRedirectUrl " + self.url + " Fail.")
 
-            sys.argv = ['you-get','--debug', '-o', self.directory, '-O', self.time + "_" + fileName, self.newUrl]
-            self.logger.info("start download " + fileName + " -- " +  self.newUrl)
+            sys.argv = ['you-get', '--debug', '--format=dash-flv', '-o', self.directory, '-O',
+                        self.time + "_" + fileName, self.newUrl]
+            self.logger.info("start download " + fileName + " -- " + self.newUrl)
             you_get.main()
             self.logger.info("end download")
             return True
         except Exception as ex:
-            self.logger.error("Downloader Error: " + fileName + " -- " +  self.url + ' -- newUrl: ' + self.newUrl)
+            self.logger.error("Downloader Error: " + fileName + " -- " + self.url + ' -- newUrl: ' + self.newUrl)
             return False
