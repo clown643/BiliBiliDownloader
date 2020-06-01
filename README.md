@@ -3,6 +3,8 @@
 
 2020-05, downloaded video format modified from flv to mp4.
 
+Saving to mp4 format requires FFmpeg to be deployed in advance
+
 ---
 # BiliBiliDownloader
 
